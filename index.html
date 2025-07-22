@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KJC Staking</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>KJC Staking</h1>
+    <p id="status">❌ Not Connected</p>
+
+    <button id="connectWallet">Connect Wallet</button>
+
+    <div class="stake-section">
+      <input type="number" id="stakeAmount" placeholder="Enter amount to stake"/>
+      <button id="stakeButton">Stake</button>
+    </div>
+
+    <div id="yourStakeInfo">
+      <h2>Your Stake</h2>
+      <div id="stakeData">
+        <p><strong>Amount:</strong> <span id="stakedAmount">-</span> KJC</p>
+        <p><strong>Start Time:</strong> <span id="startTime">-</span></p>
+        <p><strong>Next Claim:</strong> <span id="nextClaim">-</span></p>
+      </div>
+      <button id="claimReward">Claim Reward</button>
+      <button id="unstakeButton">Unstake</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="abi.js"></script>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
